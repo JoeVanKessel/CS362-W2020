@@ -13,6 +13,9 @@ from collections import defaultdict
 #Get player names
 player_names = ["Annie","*Ben","*Carla"]
 
+for i in range(10):
+    player_names.append("Too Many Players")
+
 
 nV, nC = testUtility.InitnVnC(player_names)
 
@@ -23,7 +26,7 @@ supply, supply_order = testUtility.BuildSupply(player_names, nV, nC, box)
 
 #Costruct the Player objects
 #Bug: player objects are constructed for each letter in Annie
-players = testUtility.BuildPlayers(player_names[0])
+players = testUtility.BuildPlayers(player_names)
 
 #Play the game
 testUtility.PlayGame(supply, supply_order, players)
