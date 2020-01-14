@@ -14,7 +14,7 @@ from collections import defaultdict
 player_names = ["Annie","*Ben","*Carla"]
 
 for i in range(10):
-    player_names.append("Too Many Players")
+    player_names.append(str(i))
 
 
 nV, nC = testUtility.InitnVnC(player_names)
